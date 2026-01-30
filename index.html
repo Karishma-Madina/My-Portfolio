@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Madina Karishma | Portfolio</title>
+    <meta name="description" content="Portfolio of Madina Karishma - Aspiring Full Stack Developer">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">Madina</div>
+            <div class="menu-icon" onclick="toggleMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#certifications">Certifications</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h3>Hi,</h3>
+                    <h1>I'm <span class="name-highlight">Madina Karishma</span></h1>
+                    <h2>Full Stack Developer</h2>
+                    <button class="hire-btn" onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'})">
+                        Hire Me
+                    </button>
+                    
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/karishma-madina-1663a8331" target="_blank" title="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://github.com/Karishma-Madina" target="_blank" title="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="mailto:madinakarishma36@gmail.com" title="Email">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="hero-image">
+                    <div class="image-blob"></div>
+                    <img src="Profile.png" alt="Madina Karishma" onerror="this.onerror=null; this.src='https://via.placeholder.com/350x350/9D7FEA/ffffff?text=MK';">
+                </div>
+            </div>
+            
+            <div class="scroll-down" onclick="document.getElementById('about').scrollIntoView({behavior: 'smooth'})">
+                <span>About</span>
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <p>
+                    Hi, I'm <strong>Madina Karishma</strong>, a passionate Computer Science student and aspiring Full Stack Developer. 
+                    I enjoy building responsive and user-friendly web applications using HTML, CSS, and JavaScript. 
+                    I am always eager to learn new tools and improve my problem-solving skills through real-world projects.
+                </p>
+                <p>
+                    Currently pursuing B.Tech in Computer Science Engineering at <strong>Gayatri Vidya Parishad College of Engineering (Autonomous)</strong>, 
+                    I have hands-on experience with multiple programming languages and frameworks. I love turning ideas into functional 
+                    applications and continuously expanding my technical skill set.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section">
+        <div class="container">
+            <h2 class="section-title">My Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fab fa-python"></i>
+                    </div>
+                    <h3>Python</h3>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>C</h3>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>C++</h3>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fab fa-java"></i>
+                    </div>
+                    <h3>Java</h3>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fab fa-html5"></i>
+                    </div>
+                    <h3>HTML</h3>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fab fa-css3-alt"></i>
+                    </div>
+                    <h3>CSS</h3>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fab fa-js"></i>
+                    </div>
+                    <h3>JavaScript</h3>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3>DBMS</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="certifications-section">
+        <div class="container">
+            <h2 class="section-title">Certifications</h2>
+            <div class="certifications-grid">
+                <div class="certification-card">
+                    <div class="cert-header">
+                        <div class="cert-icon">
+                            <i class="fas fa-certificate"></i>
+                        </div>
+                        <div class="cert-badge">Verified</div>
+                    </div>
+                    <h3>Alteryx Virtual Internship</h3>
+                    <p class="cert-issuer">
+                        <i class="fas fa-building"></i>
+                        AICTE - All India Council for Technical Education
+                    </p>
+                    <p class="cert-college">
+                        <i class="fas fa-graduation-cap"></i>
+                        Gayatri Vidya Parishad College of Engineering (Autonomous)
+                    </p>
+                    <p class="cert-description">
+                        Successfully completed virtual internship program focused on data analytics and workflow automation using Alteryx platform.
+                    </p>
+                    <button class="view-cert-btn" onclick="window.open('AlteryxCertificate.pdf', '_blank')">
+                        <i class="fas fa-eye"></i> View Certificate
+                    </button>
+                </div>
+                
+                <!-- You can add more certificates here in the future -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
+        <div class="container">
+            <h2 class="section-title">My Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-icon">
+                        <i class="fas fa-book-reader"></i>
+                    </div>
+                    <h3>StudyMate</h3>
+                    <p>
+                        An AI-powered PDF study companion built with Streamlit that extracts text from PDF documents 
+                        and generates intelligent summaries using TextRank algorithm. Features include customizable 
+                        summary length, text statistics, and downloadable results.
+                    </p>
+                    <div class="project-tags">
+                        <span>Python</span>
+                        <span>Streamlit</span>
+                        <span>NLP</span>
+                        <span>PyMuPDF</span>
+                    </div>
+                    <a href="https://github.com/Karishma-Madina/Studymate" target="_blank" class="project-link">
+                        View on GitHub <i class="fas fa-external-link-alt"></i>
+                    </a>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-icon">
+                        <i class="fas fa-university"></i>
+                    </div>
+                    <h3>University Website</h3>
+                    <p>
+                        A fully responsive multi-page website showcasing university information, facilities, departments, 
+                        and branches. Features modern design with smooth navigation, mobile-friendly interface, and 
+                        interactive elements.
+                    </p>
+                    <div class="project-tags">
+                        <span>HTML5</span>
+                        <span>CSS3</span>
+                        <span>JavaScript</span>
+                        <span>Responsive</span>
+                    </div>
+                    <a href="https://github.com/Karishma-Madina/University-Website" target="_blank" class="project-link">
+                        View on GitHub <i class="fas fa-external-link-alt"></i>
+                    </a>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-icon">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <h3>Portfolio Website</h3>
+                    <p>
+                        A modern, responsive portfolio website with elegant lavender theme showcasing skills, projects, 
+                        certifications, and experience. Features smooth animations, gradient backgrounds, and professional design.
+                    </p>
+                    <div class="project-tags">
+                        <span>HTML5</span>
+                        <span>CSS3</span>
+                        <span>JavaScript</span>
+                        <span>Responsive</span>
+                    </div>
+                    <a href="https://github.com/Karishma-Madina/My-Portfolio" target="_blank" class="project-link">
+                        View on GitHub <i class="fas fa-external-link-alt"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Let's work together!</h3>
+                    <p>I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.</p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <a href="mailto:madinakarishma36@gmail.com">madinakarishma36@gmail.com</a>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fab fa-linkedin"></i>
+                            <a href="https://www.linkedin.com/in/karishma-madina-1663a8331" target="_blank">LinkedIn Profile</a>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fab fa-github"></i>
+                            <a href="https://github.com/Karishma-Madina" target="_blank">GitHub Profile</a>
+                        </div>
+                    </div>
+                </div>
+
+                <form class="contact-form" onsubmit="handleSubmit(event)">
+                    <div class="form-group">
+                        <input type="text" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Your Message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Madina Karishma. All rights reserved.</p>
+            <div class="footer-social">
+                <a href="https://www.linkedin.com/in/karishma-madina-1663a8331" target="_blank">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://github.com/Karishma-Madina" target="_blank">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="mailto:madinakarishma36@gmail.com">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
